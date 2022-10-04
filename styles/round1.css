@@ -1,0 +1,118 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.roundboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;
+    margin-bottom: 5vh;
+    max-width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+@media only screen and (max-width: 650px) {
+    .roundboard {
+        grid-template-columns: repeat(6, 12vh);
+        grid-template-rows: repeat(6, 6vw);
+        margin: 2%;
+        min-width: 60vw;
+        font-size: x-small;
+        margin-bottom: 5vh;
+    }
+    .cat {
+        padding: 0;
+    }
+    .clue {
+        padding: 0;
+    }
+}
+
+.cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    text-transform: uppercase;
+    border: 1px solid;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.clue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 1em;
+}
+
+.play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userinput {
+    display: flex;
+    flex-direction: column;
+}
+
+#answerid {
+    align-self: center;
+    padding: .2%;
+    width: 20vw;
+    min-width: 15vw;
+    margin-bottom: 1%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#guess {
+    margin: 1em;
+    padding: .5em 1.5em;
+}
+
+#pass {
+    margin: 1em;
+    padding: .5em 1.5em;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.next {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    margin-bottom: 20vh;
+}
+
+.roundfooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h4 {
+    font-weight: normal;
+}

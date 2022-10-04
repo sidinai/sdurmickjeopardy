@@ -1,0 +1,102 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/dustin-tramel-jXkeRL4k6-g-unsplash.jpg);
+}
+
+.jeotitle {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .jeotitle {
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 215px) {
+    .jeotitle {
+        font-size: 6vw;
+    }
+}
+
+.jeomain {
+    display: flex;
+    flex-direction: column;
+}
+
+#jeoimage {
+    align-self: center;
+    padding-bottom: 2%;
+    width: 40%;
+    height: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+    #jeoimage {
+        width: 75%;
+        height: 50%;
+    }
+}
+
+#jeobuttonlink {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+#jeobutton {
+    width: 7vw;
+}
+
+.jeofooter {
+    font-size: .75vw;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+h1 {
+    padding: 1% 0;
+}
+
+
+/* @media screen and (min-height: 950px) {
+    .jeotitle {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+} */
+
+
+/* .jeowrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.jeotitle {
+    align-self: center;
+}
+
+.jeomain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jeofooter {
+    align-self: center;
+} */

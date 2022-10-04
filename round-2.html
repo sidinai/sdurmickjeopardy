@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/round1.css">
+    <title>Jeopardy</title>
 </head>
+
 <body>
-  <h1>Second Round</h1>
+    <header>
+        <h1 class="roundtitle">Second Round</h1>
+        <h2 class="playerturn">Player Turn
+        </h2>
+    </header>
+    <div class="roundboard">
+        <div class="cat">category</div>
+        <div class="clue">200</div>
+        <div class="clue">400</div>
+        <div class="clue">600</div>
+        <div class="clue">800</div>
+        <div class="clue">1000</div>
+        <div class="cat">category</div>
+        <div class="clue">200</div>
+        <div class="clue">400</div>
+        <div class="clue">600</div>
+        <div class="clue">800</div>
+        <div class="clue">1000</div>
+        <div class="cat">category</div>
+        <div class="clue">200</div>
+        <div class="clue">400</div>
+        <div class="clue">600</div>
+        <div class="clue">800</div>
+        <div class="clue">1000</div>
+        <div class="cat">category</div>
+        <div class="clue">200</div>
+        <div class="clue">400</div>
+        <div class="clue">600</div>
+        <div class="clue">800</div>
+        <div class="clue">1000</div>
+        <div class="cat">category</div>
+        <div class="clue">200</div>
+        <div class="clue">400</div>
+        <div class="clue">600</div>
+        <div class="clue">800</div>
+        <div class="clue">1000</div>
+        <div class="cat">category</div>
+        <div class="clue">200</div>
+        <div class="clue">400</div>
+        <div class="clue">600</div>
+        <div class="clue">800</div>
+        <div class="clue">1000</div>
+    </div>
+    <section class="play">
+        <div class="userinput">
+            <!-- <label for="answer"></label> -->
+            <input type="text" placeholder="Your Answer..." id="answerid">
+        </div>
+        <div class="buttons">
+            <button id="guess" type="button">GUESS</button>
+            <button id="pass" type="button">PASS</button>
+        </div>
+        <div class="score">
+            <span id="player1score">Player 1 Score: 0</span>
+            <span id="player2score">Player 2 Score: 0</span>
+        </div>
+        <div class="next">
+            <button id="playagain" type="button">Next Round</button>
+        </div>
+    </section>
+    <footer class="roundfooter ">
+        <h4>Website by Sidney Durmick: SDB Upright Cohort Fall 2022</h4>
+    </footer>
 </body>
+
 </html>
