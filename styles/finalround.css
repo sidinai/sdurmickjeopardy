@@ -1,0 +1,67 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.finalcategory {
+    border: solid;
+    align-self: center;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    padding: 1vw 14vw;
+}
+
+.finalquestion {
+    border: solid;
+    align-self: center;
+    margin-bottom: 3vh;
+    padding: 7vw 14vw;
+}
+
+.inputbuttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#userinput {
+    align-self: center;
+    padding: 1vh 8vw;
+    margin-bottom: 2vh;
+}
+
+#guess {
+    align-self: center;
+    padding: 1vh 6vw;
+    margin-bottom: 2vh;
+}
+
+.jeofooter {
+    font-size: .75vw;
+    display: flex;
+    justify-content: center;
+}
+
+.roundfooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h4 {
+    font-weight: normal;
+}

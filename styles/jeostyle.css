@@ -4,13 +4,20 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(./assets/dustin-tramel-jXkeRL4k6-g-unsplash.jpg);
+    object-fit: contain;
+    background-image: url(./dustin-tramel-jXkeRL4k6-g-unsplash.jpg);
+    letter-spacing: .7em;
+    /* : url("./assets/dustin-tramel-jXkeRL4k6-g-unsplash.jpg"); */
 }
 
 .jeotitle {
     display: flex;
     justify-content: center;
     font-size: 4vw;
+    font-style: oblique;
+    font-family: "Avenir", sans-serif;
+    font-variant: small-caps;
+    color: aliceblue;
 }
 
 @media only screen and (max-width: 700px) {
@@ -53,6 +60,17 @@ body {
 
 #jeobutton {
     width: 7vw;
+    background-color: greenyellow;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Bold Avenir, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    max-width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .jeofooter {
@@ -63,6 +81,8 @@ body {
 
 h4 {
     font-weight: normal;
+    font-family: "Avenir", sans-serif;
+    color: aliceblue;
 }
 
 h1 {
