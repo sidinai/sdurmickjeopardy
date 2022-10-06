@@ -1,67 +1,197 @@
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 4vw;
-    margin-bottom: 0;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2vw;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.finalcategory {
-    border: solid;
-    align-self: center;
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-    padding: 1vw 14vw;
-}
-
-.finalquestion {
-    border: solid;
-    align-self: center;
-    margin-bottom: 3vh;
-    padding: 7vw 14vw;
-}
-
-.inputbuttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#userinput {
-    align-self: center;
-    padding: 1vh 8vw;
-    margin-bottom: 2vh;
-}
-
-#guess {
-    align-self: center;
-    padding: 1vh 6vw;
-    margin-bottom: 2vh;
-}
-
-.jeofooter {
-    font-size: .75vw;
-    display: flex;
-    justify-content: center;
-}
-
-.roundfooter {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-h4 {
-    font-weight: normal;
-}
+    html {
+        background-image: url("./dustin-tramel-jXkeRL4k6-g-unsplash.jpg");
+        background-size: auto 200%;
+    }
+    
+     :root {
+        --color-primary: #ee53a5;
+        --color-secondary: #ed891f;
+        --color-tertiary: #215d7b;
+        --color-quaternary: #a0f518;
+        --color-quinary: #d4230b;
+    }
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-family: "Avenir", sans-serif;
+        font-size: 4vw;
+        font-style: oblique;
+        margin-top: 2em;
+        margin-bottom: 0;
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+        font-weight: 50%;
+        color: var(--color-primary);
+        animation: shadows 1.2s ease-in infinite, move 1.8s ease-in infinite;
+        letter-spacing: 0.6rem;
+    }
+    
+    @keyframes shadows {
+        0% {
+            text-shadow: none;
+        }
+        10% {
+            text-shadow: 3px 3px 0 var(--color-secondary);
+        }
+        20% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+        }
+        30% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+        }
+        40% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+        }
+        50% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+        }
+        60% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+        }
+        70% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+        }
+        80% {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+        }
+        90% {
+            text-shadow: 3px 3px 0 var(--color-secondary);
+        }
+        100% {
+            text-shadow: none;
+        }
+    }
+    
+    @keyframes move {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        40% {
+            transform: translate(-12px, -12px);
+        }
+        50% {
+            transform: translate(-12px, -12px);
+        }
+        60% {
+            transform: translate(-12px, -12px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+        .jeotitle {
+            font-size: 7vw;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .jeotitle {
+            margin-top: 3em;
+            font-size: 4vw;
+        }
+    }
+    
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-family: "Avenir", sans-serif;
+        color: blanchedalmond;
+        text-transform: uppercase;
+        font-size: 2.5vw;
+        text-shadow: 6px 6px 8px palevioletred;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .finalcategory {
+        border: solid;
+        color: aliceblue;
+        font-family: "Avenir", sans-serif;
+        font-weight: bold;
+        text-shadow: 6px 6px 8px palevioletred;
+        align-self: center;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        padding: 1vw 14vw;
+        text-transform: uppercase;
+    }
+    
+    .finalquestion {
+        border: solid;
+        color: aliceblue;
+        font-family: "Avenir", sans-serif;
+        font-weight: bold;
+        text-shadow: 6px 6px 8px palevioletred;
+        text-transform: uppercase;
+        align-self: center;
+        margin-bottom: 3vh;
+        padding: 7vw 14vw;
+    }
+    
+    .inputbuttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: orchid; */
+    }
+    
+    #userinput {
+        align-self: center;
+        padding: 1vh 8vw;
+        margin-bottom: 2vh;
+    }
+    
+    #guess {
+        align-self: center;
+        padding: 1vh 6vw;
+        margin-bottom: 2vh;
+        background-color: blueviolet;
+        border: solid 4px aliceblue;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: Bold Avenir, sans-serif;
+        color: orange;
+    }
+    
+    #guess:hover {
+        background-color: rgb(244, 115, 220);
+        font-weight: bold;
+        border: solid 5px aliceblue;
+        color: green;
+    }
+    
+    .jeofooter {
+        font-size: .75vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .roundfooter {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    h4 {
+        font-weight: normal;
+        font-family: "Avenir", sans-serif;
+        color: aliceblue;
+        text-shadow: 3px 3px black;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .roundfooter {
+            margin: 3vh 5vw 1vh;
+            font-size: 2vw;
+        }
+        html {
+            background-image: url("./fidel-fernando-249DzAuJTqQ-unsplash.jpg");
+        }
+    }

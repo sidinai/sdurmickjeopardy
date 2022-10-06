@@ -5,30 +5,93 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: contain;
-    background-image: url(./dustin-tramel-jXkeRL4k6-g-unsplash.jpg);
-    letter-spacing: .7em;
+    background-image: url("./dustin-tramel-jXkeRL4k6-g-unsplash.jpg");
+    background-size: auto 200%;
+    letter-spacing: .2em;
     /* : url("./assets/dustin-tramel-jXkeRL4k6-g-unsplash.jpg"); */
+}
+
+:root {
+    --color-primary: #ee53a5;
+    --color-secondary: #ed891f;
+    --color-tertiary: #215d7b;
+    --color-quaternary: #a0f518;
+    --color-quinary: #d4230b;
 }
 
 .jeotitle {
     display: flex;
     justify-content: center;
+    padding: 1% 0;
     font-size: 4vw;
     font-style: oblique;
     font-family: "Avenir", sans-serif;
     font-variant: small-caps;
-    color: aliceblue;
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-weight: 50%;
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite, move 1.8s ease-in infinite;
+    letter-spacing: 0.6rem;
 }
 
-@media only screen and (max-width: 700px) {
-    .jeotitle {
-        font-size: 7vw;
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+    10% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    50% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+        text-shadow: none;
     }
 }
 
-@media only screen and (max-width: 215px) {
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(-12px, -12px);
+    }
+    50% {
+        transform: translate(-12px, -12px);
+    }
+    60% {
+        transform: translate(-12px, -12px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@media screen and (max-width: 600px) {
     .jeotitle {
-        font-size: 6vw;
+        margin-top: 3em;
+        font-size: 4vw;
     }
 }
 
@@ -44,7 +107,7 @@ body {
     height: 25%;
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     #jeoimage {
         width: 75%;
         height: 50%;
@@ -60,21 +123,26 @@ body {
 
 #jeobutton {
     width: 7vw;
-    background-color: greenyellow;
+    background-color: orchid;
+    box-shadow: 20px 20px 50px 10px greenyellow inset;
+    border: solid 1px orchid;
     border-radius: 8px;
     cursor: pointer;
     font-family: Bold Avenir, sans-serif;
     font-size: 16px;
     height: 48px;
     justify-content: center;
-    max-width: 100%;
     user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+}
+
+#jeobutton:hover {
+    background-color: rgb(244, 115, 220);
+    font-weight: bold;
+    border: solid 5px aliceblue;
 }
 
 .jeofooter {
-    font-size: .75vw;
+    font-size: 1vw;
     display: flex;
     justify-content: center;
 }
@@ -83,40 +151,20 @@ h4 {
     font-weight: normal;
     font-family: "Avenir", sans-serif;
     color: aliceblue;
+    text-shadow: 6px 6px 8px black;
 }
 
-h1 {
-    padding: 1% 0;
-}
-
-
-/* @media screen and (min-height: 950px) {
-    .jeotitle {
-        display: flex;
-        justify-content: center;
-        margin: auto;
+@media screen and (max-width: 1000px) {
+    .jeofooter {
+        margin: 10vh 5vw 1vh;
+        font-size: 2vw;
     }
-} */
-
-
-/* .jeowrapper {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    align-items: baseline;
+    #jeobutton {
+        width: 20vw;
+        height: 5vh;
+        margin-top: 2vw;
+    }
+    body {
+        background-image: url("./fidel-fernando-249DzAuJTqQ-unsplash.jpg");
+    }
 }
-
-.jeotitle {
-    align-self: center;
-}
-
-.jeomain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.jeofooter {
-    align-self: center;
-} */
